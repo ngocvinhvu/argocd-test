@@ -16,6 +16,9 @@ spec:
     spec:
       containers:
       - name: python-test
+        envFrom:
+        - configMapRef:
+            name: secret-registry
         image: ghcr.io/ngocvinhvu/python-test:2bf41f24c67de963ba22a752b33ea5596688123c@sha256:a496923d20f31d45ab4ca460c89343ba3bd768da5c2c313dd4e86e307736d21f
         ports:
         - containerPort: 5000

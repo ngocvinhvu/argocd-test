@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-test
-        image: ngocvinhvu/argocd-test:9bda856a340e2fe3575d557bab4ac1a593fbd74e
+        image: ghcr.io/ngocvinhvu/argocd-test:9bda856a340e2fe3575d557bab4ac1a593fbd74e
         ports:
         - containerPort: 5000

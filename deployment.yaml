@@ -16,9 +16,6 @@ spec:
     spec:
       containers:
       - name: python-test
-        envFrom:
-        - configMapRef:
-            name: secret-registry
-        image: rose13/python-test:e43278c23c1d283a1acfc4ba6dc89bd32e271463
+        image: ngocvinhvu/argocd-test:604ac3b39a717bbceb7e0386debaed67fd7857bb
         ports:
         - containerPort: 5000
